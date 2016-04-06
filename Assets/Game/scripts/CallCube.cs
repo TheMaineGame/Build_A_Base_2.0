@@ -17,16 +17,14 @@ public class CallCube : MonoBehaviour
             Mathf.Round (cameraPos.position.y),
             Mathf.Round (cameraPos.position.z)
             );
-        if (!Physics.CheckBox (
+        while (!Physics.CheckBox (
             pos,
             m_livingQuarters.GetComponent<BoxCollider>().bounds.extents,
             m_livingQuarters.transform.rotation,
             buildings)
             ) {
-            GameObject poop = Instantiate (m_livingQuarters, pos, Quaternion.identity) as GameObject;
+            pos += Vector3.right;
         }
-        else {
-
-        }
+        GameObject poop = Instantiate (m_livingQuarters, pos, Quaternion.identity) as GameObject;
     }
 }
