@@ -17,7 +17,6 @@ public class CallCube : MonoBehaviour
             Mathf.Round (cameraPos.position.y),
             Mathf.Round (cameraPos.position.z)
             );
-        while ()
         if (!Physics.CheckBox (
             pos,
             m_livingQuarters.GetComponent<BoxCollider>().bounds.extents,
