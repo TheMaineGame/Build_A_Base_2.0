@@ -16,10 +16,11 @@ public class CallCube : MonoBehaviour {
             Mathf.Round (cameraPos.position.z)
             );
         var offset = Vector3.zero;
-        var buildingExtents = m_livingQuarters.GetComponent<BoxCollider> ().bounds.extents;
+        var buildingBox = m_livingQuarters.GetComponent<BoxCollider> ();
+        var buildingSize = m_livingQuarters.GetComponent<BoxCollider> ().size * 0.5f;
         Func<Vector3, bool> check = (Vector3 off) => Physics.CheckBox (
-            pos + off,
-            buildingExtents,
+            pos + off + buildingBox.center,
+            buildingSize,
             m_livingQuarters.transform.rotation,
             buildings);
         bool intersecting = check (offset);
