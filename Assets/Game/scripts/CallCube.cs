@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System;
 
 public class CallCube : MonoBehaviour {
     [SerializeField]
@@ -16,31 +16,30 @@ public class CallCube : MonoBehaviour {
             Mathf.Round (cameraPos.position.z)
             );
         var offset = Vector3.zero;
-        var stepVec = Vector3.forward;
         var buildingExtents = m_livingQuarters.GetComponent<BoxCollider> ().bounds.extents;
-        if (!Physics.CheckBox (
-            pos,
+        Func<Vector3, bool> check = (Vector3 off) => Physics.CheckBox (
+            pos + off,
             buildingExtents,
             m_livingQuarters.transform.rotation,
-            buildings
-            )) {
-            for (var segmentLength = 1; true; segmentLength++) {
-                for (var corners = 0; corners < 2; corners++) {
-                    for (var step = 1; step < segmentLength; step++) {
-                        offset += stepVec;
-                        if (!Physics.CheckBox (
-                            pos + offset,
-                            m_livingQuarters.GetComponent<BoxCollider> ().bounds.extents,
-                            m_livingQuarters.transform.rotation,
-                            buildings)) {
-                            goto Exit;
-                        }
-                    }
-                    stepVec = new Vector3 (-stepVec.y, stepVec.x, 0);
+            buildings);
+        bool intersecting = check (offset);
+        var stepVec = Vector3.forward;
+        var lenSide = 0;
+        while (intersecting) {
+            var turnCount = 0;
+            while (intersecting && turnCount < 2) {
+                var stepCount = 0;
+                while (intersecting && stepCount < lenSide) {
+                    offset += stepVec;
+                    intersecting = check (offset);
+                    stepCount++;
                 }
+                stepVec.Set (stepVec.z, 0, -stepVec.x);
+                turnCount++;
             }
+            lenSide++;
         }
-    Exit:
-        Instantiate (m_livingQuarters, pos + offset, Quaternion.identity);
+        var building = Instantiate (m_livingQuarters);
+        building.transform.position = pos + offset;
     }
 }
