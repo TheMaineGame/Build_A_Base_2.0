@@ -45,6 +45,6 @@ public class MagicAnimationScript : MonoBehaviour {
     {
         yield return new WaitForSeconds(3.5f);
         FakeLoadingScreen.SetActive(true);
-        filler.SetTrigger("FadeIn");
+        filler.SetTrigger("DiveIn");
     }
 }
