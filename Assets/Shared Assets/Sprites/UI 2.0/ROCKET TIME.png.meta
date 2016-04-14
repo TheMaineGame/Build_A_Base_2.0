@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 44617f139bfbe447898c211bd43fb762
 timeCreated: 1460576246
+=======
+guid: 589663c5f48d24f41afbc26357c2a7dc
+timeCreated: 1460403783
+>>>>>>> refs/remotes/origin/No-Intersections
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -46,7 +51,10 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 0
+<<<<<<< HEAD
   spriteTessellationDetail: -1
+=======
+>>>>>>> refs/remotes/origin/No-Intersections
   textureType: -1
   buildTargetSettings: []
   spriteSheet:

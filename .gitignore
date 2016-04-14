@@ -63,4 +63,5 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-.vs/Build_A_Base_2.0/v14/.suo
+#stop. commiting. this. file. SERIOUSLY. STOP.
+*.suo

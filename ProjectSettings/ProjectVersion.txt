@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 m_EditorVersion: 5.4.0b13
+=======
+m_EditorVersion: 5.3.4f1
+>>>>>>> refs/remotes/origin/No-Intersections
 m_StandardAssetsVersion: 0

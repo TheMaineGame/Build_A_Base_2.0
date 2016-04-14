@@ -9,6 +9,14 @@ using System;
 public class DragNDrop : MonoBehaviour, IDragHandler {
     [SerializeField]
     LayerMask floor;
+    [SerializeField]
+    LayerMask buildings;
+
+    BoxCollider box;
+
+    public void Start() {
+        box = GetComponent<BoxCollider> ();
+    }
 
     public void OnDrag (PointerEventData eventData) {
         // Assembling important variables to be accessed by shorter names
@@ -23,20 +31,12 @@ public class DragNDrop : MonoBehaviour, IDragHandler {
         var toFloor = new Ray (pointerPos, worldPos - pointerPos);
 
         RaycastHit hit;
-        Debug.DrawRay (pointerPos, worldPos - pointerPos);
+        // Debug.DrawRay (pointerPos, worldPos - pointerPos);
         if (Physics.Raycast (toFloor, out hit, 10000, floor)) {
             var point = hit.point;
             var snapped = new Vector3 (Mathf.Round (point.x), Mathf.Round (point.y), Mathf.Round (point.z));
-            gameObject.transform.position = snapped;
+            if (!Physics.CheckBox(point, box.bounds.extents, transform.rotation, buildings))
+                gameObject.transform.position = snapped;
         }
     }
-
-    // Use this for initialization
-    void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	}
 }
