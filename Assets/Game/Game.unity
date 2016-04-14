@@ -367,11 +367,11 @@ Prefab:
       objectReference: {fileID: 786371479}
     - target: {fileID: 22457352, guid: beefc4af6c6381c4283e1ca8bc56e39d, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22446196, guid: beefc4af6c6381c4283e1ca8bc56e39d, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22480060, guid: beefc4af6c6381c4283e1ca8bc56e39d, type: 2}
       propertyPath: m_AnchorMin.y
@@ -491,6 +491,30 @@ Prefab:
       propertyPath: cameraPos
       value: 
       objectReference: {fileID: 57853465}
+    - target: {fileID: 11462528, guid: 9858bba9d26b75e46bcb71ae0a32a70c, type: 2}
+      propertyPath: buildings.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414666, guid: 9858bba9d26b75e46bcb71ae0a32a70c, type: 2}
+      propertyPath: buildings.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 11477464, guid: 9858bba9d26b75e46bcb71ae0a32a70c, type: 2}
+      propertyPath: buildings.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 11455012, guid: 9858bba9d26b75e46bcb71ae0a32a70c, type: 2}
+      propertyPath: buildings.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 11482122, guid: 9858bba9d26b75e46bcb71ae0a32a70c, type: 2}
+      propertyPath: buildings.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 11418634, guid: 9858bba9d26b75e46bcb71ae0a32a70c, type: 2}
+      propertyPath: buildings.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9858bba9d26b75e46bcb71ae0a32a70c, type: 2}
   m_IsPrefabParent: 0
