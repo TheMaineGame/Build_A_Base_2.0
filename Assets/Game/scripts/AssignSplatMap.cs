@@ -2,9 +2,9 @@
 using System.Collections;
 using System.Linq; // used for Sum of array
 
+[ExecuteInEditMode]
 public class AssignSplatMap : MonoBehaviour
-{
-
+{    
     void Start()
     {
         // Get the attached terrain component
@@ -39,7 +39,7 @@ public class AssignSplatMap : MonoBehaviour
                 // CHANGE THE RULES BELOW TO SET THE WEIGHTS OF EACH TEXTURE ON WHATEVER RULES YOU WANT
 
                 // Texture[0] has constant influence
-                splatWeights[0] = 0.1f;
+                splatWeights[0] = 0.5f;
 
                 // Texture[1] is stronger at lower altitudes
                 splatWeights[1] = Mathf.Clamp01((terrainData.heightmapHeight - height));
@@ -50,7 +50,7 @@ public class AssignSplatMap : MonoBehaviour
                 splatWeights[2] = 1.0f - Mathf.Clamp01(steepness * steepness / (terrainData.heightmapHeight / 5.0f));
 
                 // Texture[3] increases with height but only on surfaces facing positive Z axis 
-                splatWeights[3] = height * Mathf.Clamp01(normal.z);
+                splatWeights[3] = height * Mathf.Clamp01(normal.x);
 
                 // Sum of all textures weights must add to 1, so calculate normalization factor from sum of weights
                 float z = splatWeights.Sum();
