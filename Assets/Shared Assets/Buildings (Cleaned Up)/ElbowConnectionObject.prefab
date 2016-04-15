@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 450762}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ GameObject:
   - 33: {fileID: 3319822}
   - 23: {fileID: 2311504}
   - 111: {fileID: 11127640}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Elbow Connection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - 4: {fileID: 484208}
   - 65: {fileID: 6539558}
   - 114: {fileID: 11403822}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ElbowConnectionObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,13 +161,24 @@ MonoBehaviour:
   floor:
     serializedVersion: 2
     m_Bits: 256
+  buildings:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: buildings.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 146136}

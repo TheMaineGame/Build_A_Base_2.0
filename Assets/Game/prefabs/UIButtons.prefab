@@ -110,25 +110,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &144396
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 482324}
-  - 33: {fileID: 3385424}
-  - 65: {fileID: 6582750}
-  - 23: {fileID: 2365826}
-  - 114: {fileID: 11467684}
-  m_Layer: 0
-  m_Name: m_LivingQuarters
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
 --- !u!1 &150778
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,63 +204,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &482324
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 144396}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -393, y: 219.5, z: 2218.524}
-  m_LocalScale: {x: 41.76728, y: 41.767273, z: 41.767273}
-  m_Children: []
-  m_Father: {fileID: 22416196}
-  m_RootOrder: 1
---- !u!23 &2365826
-MeshRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 144396}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!33 &3385424
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 144396}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &6582750
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 144396}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &11406268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -451,6 +375,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_livingQuarters: {fileID: 123402, guid: 78c560f0106060b45bad8a01fbb6cafb, type: 2}
   cameraPos: {fileID: 0}
+  buildings:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &11418634
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -464,6 +391,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_livingQuarters: {fileID: 147868, guid: 091aee8ff0275bb4d9c8377ab8e9e399, type: 2}
   cameraPos: {fileID: 0}
+  buildings:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &11429328
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -597,6 +527,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_livingQuarters: {fileID: 115810, guid: 7b46badcd7c327e419a7fbb5fa91c661, type: 2}
   cameraPos: {fileID: 0}
+  buildings:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &11459262
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -662,6 +595,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_livingQuarters: {fileID: 187238, guid: f2324dbb441cf134e9c89348bd47ed23, type: 2}
   cameraPos: {fileID: 0}
+  buildings:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &11462696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -733,7 +669,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 164e435cf6d05a948acfa31abec4adb5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00dc491f6f29c6a46adc22d61e989eb5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -762,17 +698,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &11467684
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 144396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11471030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -919,6 +844,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_livingQuarters: {fileID: 115310, guid: 42e1b87a0f2dc7e4eb439f1e3657b11b, type: 2}
   cameraPos: {fileID: 0}
+  buildings:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &11482122
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -932,6 +860,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_livingQuarters: {fileID: 180146, guid: 5090b9388deeddf4cac29542d417f229, type: 2}
   cameraPos: {fileID: 0}
+  buildings:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &11482876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1258,7 +1189,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 22470768}
-  - {fileID: 482324}
   - {fileID: 22459712}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1354,7 +1284,7 @@ RectTransform:
   - {fileID: 22432154}
   - {fileID: 22400366}
   m_Father: {fileID: 22416196}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 110, y: 0}

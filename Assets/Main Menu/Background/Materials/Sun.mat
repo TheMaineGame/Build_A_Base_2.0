@@ -68,7 +68,7 @@ Material:
         first:
           name: _DetailMask
         second:
-          m_Texture: {fileID: 2800000, guid: 1a21c62bd7fcef34b8701b69f21cf83f, type: 3}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -98,7 +98,7 @@ Material:
       data:
         first:
           name: _Glossiness
-        second: 0
+        second: 0.5
       data:
         first:
           name: _Metallic
@@ -110,7 +110,7 @@ Material:
       data:
         first:
           name: _Parallax
-        second: 0.005
+        second: 0.02
       data:
         first:
           name: _OcclusionStrength

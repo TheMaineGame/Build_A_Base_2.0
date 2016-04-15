@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 493238}
   - 33: {fileID: 3390946}
   - 23: {fileID: 2302278}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Box048
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   - 4: {fileID: 472980}
   - 33: {fileID: 3327046}
   - 23: {fileID: 2305800}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Line002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - 4: {fileID: 416218}
   - 33: {fileID: 3380186}
   - 23: {fileID: 2316124}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ GameObject:
   - 4: {fileID: 488668}
   - 33: {fileID: 3324844}
   - 23: {fileID: 2304182}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ GameObject:
   - 4: {fileID: 465414}
   - 33: {fileID: 3383366}
   - 23: {fileID: 2336018}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Base Connection Piece003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - 4: {fileID: 411718}
   - 65: {fileID: 6558936}
   - 114: {fileID: 11447916}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FoodObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - 4: {fileID: 406320}
   - 33: {fileID: 3356672}
   - 23: {fileID: 2348322}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sphere002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   - 4: {fileID: 435240}
   - 33: {fileID: 3330558}
   - 23: {fileID: 2309264}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   - 4: {fileID: 409132}
   - 33: {fileID: 3381196}
   - 23: {fileID: 2360456}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Object007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   - 33: {fileID: 3335522}
   - 23: {fileID: 2313446}
   - 111: {fileID: 11165028}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Food
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +181,7 @@ GameObject:
   - 4: {fileID: 478032}
   - 33: {fileID: 3314376}
   - 23: {fileID: 2381166}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ GameObject:
   - 4: {fileID: 400428}
   - 33: {fileID: 3381524}
   - 23: {fileID: 2337778}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sphere003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   - 4: {fileID: 432724}
   - 33: {fileID: 3371532}
   - 23: {fileID: 2309786}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Object006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -232,7 +232,7 @@ GameObject:
   - 4: {fileID: 478316}
   - 33: {fileID: 3327158}
   - 23: {fileID: 2353262}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 426654}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -264,7 +264,7 @@ GameObject:
   - 4: {fileID: 480690}
   - 33: {fileID: 3385356}
   - 23: {fileID: 2316030}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -981,13 +981,24 @@ MonoBehaviour:
   floor:
     serializedVersion: 2
     m_Bits: 256
+  buildings:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: buildings.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 127316}

@@ -32,6 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &2058514
 Camera:
   m_ObjectHideFlags: 1
@@ -89,7 +90,7 @@ Animator:
   m_GameObject: {fileID: 102870}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4d89ed42f1fbd8047bb456bc33278efe, type: 2}
+  m_Controller: {fileID: 9100000, guid: e052cb2415571ed4f8e82d28e30d5bac, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
