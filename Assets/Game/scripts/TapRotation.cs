@@ -27,7 +27,7 @@ public class TapRotation : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
         box.enabled = false;
         do {
             gameObject.transform.rotation *= Quaternion.Euler (0, 90, 0);
-            i++;0
+            i++;
         } while (i < 4
             && Physics.CheckBox (
                 bounds.center,
