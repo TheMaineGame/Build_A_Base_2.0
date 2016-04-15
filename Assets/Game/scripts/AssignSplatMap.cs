@@ -39,7 +39,7 @@ public class AssignSplatMap : MonoBehaviour
                 // CHANGE THE RULES BELOW TO SET THE WEIGHTS OF EACH TEXTURE ON WHATEVER RULES YOU WANT
 
                 // Texture[0] has constant influence
-                splatWeights[0] = 0.5f;
+                splatWeights[0] = 0.1f;
 
                 // Texture[1] is stronger at lower altitudes
                 splatWeights[1] = Mathf.Clamp01((terrainData.heightmapHeight - height));
