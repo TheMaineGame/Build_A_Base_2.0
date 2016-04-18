@@ -144,21 +144,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c6d3f5ec2ad72045a25a395c4242aa3, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &225964417 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 183498, guid: 2e5c974a2bf2ced42a225ed3b70e9a52, type: 2}
-  m_PrefabInternal: {fileID: 957077902}
---- !u!114 &225964418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 225964417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fa460516d777ec458ee66dff269c754, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &252938932
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,30 +544,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 183498, guid: 2e5c974a2bf2ced42a225ed3b70e9a52, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 21842208, guid: 2e5c974a2bf2ced42a225ed3b70e9a52, type: 2}
-      propertyPath: m_TreeDistance
-      value: 2000
-      objectReference: {fileID: 0}
-    - target: {fileID: 21842208, guid: 2e5c974a2bf2ced42a225ed3b70e9a52, type: 2}
-      propertyPath: m_ReflectionProbeUsage
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 21842208, guid: 2e5c974a2bf2ced42a225ed3b70e9a52, type: 2}
-      propertyPath: m_MaterialType
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 21842208, guid: 2e5c974a2bf2ced42a225ed3b70e9a52, type: 2}
-      propertyPath: m_MaterialTemplate
-      value: 
-      objectReference: {fileID: 2100000, guid: ff36c91b326bdf042b6c94a64494f5e3, type: 2}
-    - target: {fileID: 183498, guid: 2e5c974a2bf2ced42a225ed3b70e9a52, type: 2}
-      propertyPath: m_TagString
-      value: Floor
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2e5c974a2bf2ced42a225ed3b70e9a52, type: 2}
   m_IsPrefabParent: 0
@@ -815,11 +776,11 @@ Prefab:
       objectReference: {fileID: 786371479}
     - target: {fileID: 22457352, guid: beefc4af6c6381c4283e1ca8bc56e39d, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22446196, guid: beefc4af6c6381c4283e1ca8bc56e39d, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22480060, guid: beefc4af6c6381c4283e1ca8bc56e39d, type: 2}
       propertyPath: m_AnchorMin.y
