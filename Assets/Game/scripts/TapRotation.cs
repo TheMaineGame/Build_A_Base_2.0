@@ -38,28 +38,29 @@ public class TapRotation : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
     }
 
     void Rotate () {
-        Bounds bounds;
+        Bounds bounds = box.bounds;
         var i = 0;
         bool intersect = false;
+        var check = Quaternion.identity;
         do {
-            gameObject.transform.rotation *= Quaternion.Euler (0, 90, 0);
-            bounds = box.bounds;
+            check *= Quaternion.Euler (0, 90, 0);
             box.enabled = false;
             intersect = Physics.CheckBox (
                 bounds.center,
                 bounds.extents,
-                Quaternion.identity,
+                check,
                 buildingLayer);
             box.enabled = true;
-            // Debug.Log ("Intersecting: " + intersect);
-            // Debug.Log ("Bounds: " + bounds);
+            Debug.Log ("Intersecting: " + intersect);
+            Debug.Log ("Center: " + bounds.center);
+            Debug.Log ("Extents: " + check * bounds.extents);
             i++;
         } while (i < 4 && intersect);
         if (i == 4) {
             CantDoThatParticles.Emit (1);
         }
         else {
-
+            StartCoroutine (RotateCoroutine (check * gameObject.transform.rotation));
         }
     }
 
@@ -67,7 +68,7 @@ public class TapRotation : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
         var time = 0f;
         var oPos = gameObject.transform.position; // for "orginal position"
         var newPos = gameObject.transform.position + Vector3.up * levitateHeight;
-        var riseTime = riseUnitsPerSec * levitateHeight;
+        var riseTime = levitateHeight / riseUnitsPerSec;
         while (time < riseTime) {
             time += Time.deltaTime;
             gameObject.transform.position = Vector3.Lerp (oPos, newPos, time / riseTime);
@@ -81,7 +82,7 @@ public class TapRotation : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
             yield return null;
         }
         time = 0;
-        var lowTime = lowerUnitsPerSec * levitateHeight;
+        var lowTime = levitateHeight / lowerUnitsPerSec;
         while (time < lowTime) {
             time += Time.deltaTime;
             gameObject.transform.position = Vector3.Lerp (newPos, oPos, time / lowTime);
