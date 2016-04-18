@@ -25,4 +25,17 @@ public class MenuAnimations : MonoBehaviour {
         Fade.SetTrigger("Trigger");
     }
 
+    public void QuitFade()
+    {
+        Menu.SetTrigger("Quit");
+    }
+
+    public void QuitGame()
+    {
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+        Application.Quit();
+    }
+
 }

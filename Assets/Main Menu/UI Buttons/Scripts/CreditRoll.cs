@@ -13,11 +13,14 @@ public class CreditRoll : MonoBehaviour {
     void Start()
     {
         start = this.gameObject.transform.localPosition.y;
+        pos = start;
+        this.transform.localPosition = new Vector3(0, start, 0);
     }
 
-    void OnEnable()
+    public void ResetPos()
     {
         pos = start;
+        this.transform.localPosition = new Vector3(0, start, 0);
     }
 
 	void Update () {
