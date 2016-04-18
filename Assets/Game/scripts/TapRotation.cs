@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using System.Collections;
 using System;
@@ -9,10 +10,6 @@ public class TapRotation : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
 
     [SerializeField]
     LayerMask buildingLayer;
-
-    [Tooltip ("Optional")]
-    [SerializeField]
-    ParticleSystem CantDoThatParticles;
 
     [SerializeField]
     float riseUnitsPerSec = 1;
@@ -25,6 +22,10 @@ public class TapRotation : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
 
     [SerializeField]
     float levitateHeight = 3;
+
+    [Tooltip ("Optional")]
+    [SerializeField]
+    UnityEvent cantRotate;
 
     public void OnBeginDrag (PointerEventData eventData) {
         dragged = true;
@@ -53,13 +54,13 @@ public class TapRotation : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
                 check,
                 buildingLayer);
             box.enabled = true;
-            Debug.Log ("Intersecting: " + intersect);
-            Debug.Log ("Center: " + center);
-            Debug.Log ("Extents: " + check * bounds.extents);
+            //Debug.Log ("Intersecting: " + intersect);
+            //Debug.Log ("Center: " + center);
+            //Debug.Log ("Extents: " + check * bounds.extents);
             i++;
         } while (i < 4 && intersect);
         if (i == 4) {
-            CantDoThatParticles.Emit (1);
+            cantRotate.Invoke ();
         }
         else {
             StartCoroutine (RotateCoroutine (check * gameObject.transform.rotation));
