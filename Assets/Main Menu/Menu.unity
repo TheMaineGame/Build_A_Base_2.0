@@ -128,6 +128,10 @@ Prefab:
       propertyPath: m_Name
       value: PlanetCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 8113760, guid: 5bf0627ade63def4bbcb7146cbe8970b, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9563256, guid: 5bf0627ade63def4bbcb7146cbe8970b, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5bf0627ade63def4bbcb7146cbe8970b, type: 2}

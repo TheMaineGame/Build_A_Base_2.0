@@ -10,11 +10,15 @@ public class ScreenshotTHIS : MonoBehaviour {
     [SerializeField]
     GameObject Image;
 
+    [SerializeField]
+    CameraControll customCamera;
+
     AudioSource AS;
 
     void Start()
     {
         AS = GetComponent<AudioSource>();
+
     }
 
     public void OnClick ()
@@ -22,6 +26,7 @@ public class ScreenshotTHIS : MonoBehaviour {
         Canvas.SetActive(false);
         Application.CaptureScreenshot("Screenshot.png");
         StartCoroutine("Enable");
+        customCamera.enabled = false;
 	}
     IEnumerator Enable()
     {
