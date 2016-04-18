@@ -757,11 +757,11 @@ Prefab:
       objectReference: {fileID: 786371479}
     - target: {fileID: 22457352, guid: beefc4af6c6381c4283e1ca8bc56e39d, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22446196, guid: beefc4af6c6381c4283e1ca8bc56e39d, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22480060, guid: beefc4af6c6381c4283e1ca8bc56e39d, type: 2}
       propertyPath: m_AnchorMin.y
