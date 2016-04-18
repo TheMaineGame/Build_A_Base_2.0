@@ -10,9 +10,10 @@ GameObject:
   - 4: {fileID: 494904}
   - 218: {fileID: 21842208}
   - 154: {fileID: 15468320}
+  - 114: {fileID: 11414692}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -29,6 +30,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11414692
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fa460516d777ec458ee66dff269c754, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!154 &15468320
 TerrainCollider:
   m_ObjectHideFlags: 1
@@ -37,7 +49,7 @@ TerrainCollider:
   m_GameObject: {fileID: 183498}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: 1901d84d220dcd24092586f1968bef5e, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 3ba51914328fe0a42995a31a7cddd9cf, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &21842208
 Terrain:
@@ -47,8 +59,8 @@ Terrain:
   m_GameObject: {fileID: 183498}
   m_Enabled: 1
   serializedVersion: 3
-  m_TerrainData: {fileID: 15600000, guid: 1901d84d220dcd24092586f1968bef5e, type: 2}
-  m_TreeDistance: 5000
+  m_TerrainData: {fileID: 15600000, guid: 3ba51914328fe0a42995a31a7cddd9cf, type: 2}
+  m_TreeDistance: 2000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
@@ -60,13 +72,13 @@ Terrain:
   m_CastShadows: 1
   m_DrawHeightmap: 1
   m_DrawTreesAndFoliage: 1
-  m_ReflectionProbeUsage: 1
-  m_MaterialType: 0
+  m_ReflectionProbeUsage: 0
+  m_MaterialType: 3
   m_LegacySpecular:
     serializedVersion: 2
     rgba: 4286545791
   m_LegacyShininess: 0.078125
-  m_MaterialTemplate: {fileID: 0}
+  m_MaterialTemplate: {fileID: 2100000, guid: ff36c91b326bdf042b6c94a64494f5e3, type: 2}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 0.064
   m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
