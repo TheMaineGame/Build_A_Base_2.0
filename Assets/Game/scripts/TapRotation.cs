@@ -42,17 +42,19 @@ public class TapRotation : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
         var i = 0;
         bool intersect = false;
         var check = Quaternion.identity;
+        var point = gameObject.transform.position;
         do {
             check *= Quaternion.Euler (0, 90, 0);
             box.enabled = false;
+            var center = (check * (bounds.center - point)) + point;
             intersect = Physics.CheckBox (
-                bounds.center,
+                center,
                 bounds.extents,
                 check,
                 buildingLayer);
             box.enabled = true;
             Debug.Log ("Intersecting: " + intersect);
-            Debug.Log ("Center: " + bounds.center);
+            Debug.Log ("Center: " + center);
             Debug.Log ("Extents: " + check * bounds.extents);
             i++;
         } while (i < 4 && intersect);
