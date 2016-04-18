@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MenuAnimations : MonoBehaviour {
 
@@ -28,6 +29,11 @@ public class MenuAnimations : MonoBehaviour {
     public void QuitFade()
     {
         Menu.SetTrigger("Quit");
+    }
+
+    public void LoadGame()
+    {
+        SceneManager.LoadScene(1);   
     }
 
     public void QuitGame()
