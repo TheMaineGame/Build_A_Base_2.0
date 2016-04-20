@@ -11,7 +11,9 @@ public class GameTimer : MonoBehaviour {
     GameObject MainCanvas;
 
     [SerializeField]
-    Image fillamount;
+    Image fillamount, overlayColor;
+
+    
 
 	// Use this for initialization
 	void Start () {
@@ -37,10 +39,12 @@ public class GameTimer : MonoBehaviour {
         {
             if (timer == 41)
             {
+                overlayColor.color = Color.yellow;
                 countDownTimer.color = Color.yellow;
             }
             if(timer == 21)
             {
+                overlayColor.color = Color.red;
                 countDownTimer.color = Color.red;
             }
             timer--;
