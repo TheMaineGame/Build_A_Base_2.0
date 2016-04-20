@@ -43,11 +43,12 @@ public class GameTimer : MonoBehaviour {
 
     IEnumerator CountDown()
     {
-        countDownTimer.gameObject.ScaleTo(Vector3.zero, 0.5f, 0f, EaseType.linear, LoopType.pingPong);
-        int timer = 0;
-        while (timer < 100)
-        {
-            
+        int timer = 60;
+        while (timer > 0)
+		{
+			countDownTimer.transform.localScale = Vector3.one * 1.3f;
+			countDownTimer.gameObject.ScaleTo(Vector3.one, 0.9f, 0f, EaseType.linear);
+
             if (timer == 41)
             {
                 overlayColor.color = Color.yellow;
@@ -58,7 +59,7 @@ public class GameTimer : MonoBehaviour {
                 overlayColor.color = Color.red;
                 countDownTimer.color = Color.red;
             }
-            timer++;
+            timer--;
             countDownTimer.text = timer.ToString();
             yield return new WaitForSeconds(1);
         }
