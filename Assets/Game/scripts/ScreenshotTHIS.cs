@@ -13,6 +13,8 @@ public class ScreenshotTHIS : MonoBehaviour {
     GameObject GameOver;
     [SerializeField]
     GameObject ConfirmButtons;
+    [SerializeField]
+    GameObject TimerCanvas;
 
 
     [SerializeField]
@@ -34,6 +36,7 @@ public class ScreenshotTHIS : MonoBehaviour {
     public void OnClick ()
     {
         Canvas.SetActive(false);
+        TimerCanvas.SetActive(false);
         GameOver.SetActive(false);
         gameObject.GetComponent<GameTimer>().takingPicture = true;
         Slider.SetActive(true);

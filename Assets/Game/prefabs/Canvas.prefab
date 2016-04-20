@@ -2372,7 +2372,7 @@ Transform:
   m_GameObject: {fileID: 139284}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -135.77055, y: -241.95854, z: -521.72406}
-  m_LocalScale: {x: 1.7391305, y: 1.7391305, z: 1.7391305}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 22429188}
   m_RootOrder: 6
@@ -8724,7 +8724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae5ba2a2613422f4ea296817c9b1222d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameDone: 1
+  GameDone: 0
   takingPicture: 0
   countDownTimer: {fileID: 0}
   GameOverGO: {fileID: 128026}
@@ -9617,6 +9617,7 @@ MonoBehaviour:
   Image: {fileID: 197682}
   GameOver: {fileID: 128026}
   ConfirmButtons: {fileID: 129760}
+  TimerCanvas: {fileID: 0}
   Slider: {fileID: 100596}
   CameraImage: {fileID: 118694}
   customCamera: {fileID: 0}
@@ -10730,7 +10731,6 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -10749,7 +10749,6 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -10768,7 +10767,6 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0

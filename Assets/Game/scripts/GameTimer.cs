@@ -14,6 +14,12 @@ public class GameTimer : MonoBehaviour {
     GameObject MainCanvas;
     [SerializeField]
     Image fillamount, overlayColor;
+    [SerializeField]
+    GameObject TimerCanvas;
+    [SerializeField]
+    GameObject SnapShot;
+    [SerializeField]
+    GameObject SliderCanvas;
 
     
 
@@ -37,7 +43,10 @@ public class GameTimer : MonoBehaviour {
     public void GameOver()
     {
         MainCanvas.SetActive(false);
-        GameDone = true;   
+        GameDone = true;
+        SnapShot.SetActive(false);
+        TimerCanvas.SetActive(false);
+        SliderCanvas.SetActive(false);
         GameOverGO.SetActive(true);
     }
 
