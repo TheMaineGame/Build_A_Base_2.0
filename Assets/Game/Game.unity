@@ -828,6 +828,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointer: {fileID: 666529960}
   bbBoard: {fileID: 134578901}
+  gameOver: {fileID: 1323416419}
   anim: {fileID: 0}
   gestureTime: 0
 --- !u!1001 &1129848185
@@ -960,6 +961,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9b8610a232726834d8f772feb550a2cf, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1323416419 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 128026, guid: 2373ee7e8a93e6048b93dfbe6431c2fb, type: 2}
+  m_PrefabInternal: {fileID: 696463680}
 --- !u!114 &1399990204 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11466658, guid: 2373ee7e8a93e6048b93dfbe6431c2fb,
@@ -1132,6 +1137,18 @@ Prefab:
     - target: {fileID: 22472198, guid: f6ef94607b8deae49ba7f267998c8749, type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11477836, guid: f6ef94607b8deae49ba7f267998c8749, type: 2}
+      propertyPath: m_Color.a
+      value: 0.3529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 11477836, guid: f6ef94607b8deae49ba7f267998c8749, type: 2}
+      propertyPath: m_FillCenter
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11477836, guid: f6ef94607b8deae49ba7f267998c8749, type: 2}
+      propertyPath: m_RaycastTarget
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f6ef94607b8deae49ba7f267998c8749, type: 2}
