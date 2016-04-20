@@ -11,6 +11,7 @@ GameObject:
   - 65: {fileID: 6513732}
   - 114: {fileID: 11446126}
   - 114: {fileID: 11499260}
+  - 114: {fileID: 11455020}
   m_Layer: 9
   m_Name: RocketPadObject
   m_TagString: Untagged
@@ -121,22 +122,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &146136
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 400404}
-  - 65: {fileID: 6514972}
-  m_Layer: 9
-  m_Name: Collide (7)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &149992
 GameObject:
   m_ObjectHideFlags: 1
@@ -203,18 +188,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &400404
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 146136}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 416004}
-  m_RootOrder: 1
 --- !u!4 &416004
 Transform:
   m_ObjectHideFlags: 1
@@ -226,7 +199,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 470630}
-  - {fileID: 400404}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &417246
@@ -667,18 +639,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9, z: 0.9}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &6514972
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 146136}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!111 &11197312
 Animation:
   m_ObjectHideFlags: 1
@@ -711,6 +671,17 @@ MonoBehaviour:
   buildings:
     serializedVersion: 2
     m_Bits: 512
+--- !u!114 &11455020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 111008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d96aa07927b014097cb8abbb9da083, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11499260
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -13,8 +13,11 @@ public class GameTimer : MonoBehaviour {
     [SerializeField]
     Image fillamount;
 
+    public bool countDownEnabled = true;
+
 	// Use this for initialization
 	void Start () {
+        AstarPath.active.Scan();
         Time.timeScale = 1;
         StartCoroutine(CountDown());
 	}
@@ -33,7 +36,7 @@ public class GameTimer : MonoBehaviour {
     IEnumerator CountDown()
     {
         int timer = 60;
-        while (timer > 0)
+        while (timer > 0 & countDownEnabled)
         {
             if (timer == 41)
             {
@@ -47,6 +50,9 @@ public class GameTimer : MonoBehaviour {
             countDownTimer.text = timer.ToString();
             yield return new WaitForSeconds(1);
         }
-        GameOver();
+        if (timer <= 0)
+        {
+            GameOver();
+        }
     }
 }

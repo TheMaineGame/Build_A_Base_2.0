@@ -85,22 +85,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &115792
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 426474}
-  - 65: {fileID: 6502832}
-  m_Layer: 9
-  m_Name: Collide (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &127316
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,6 +96,7 @@ GameObject:
   - 65: {fileID: 6558936}
   - 114: {fileID: 11447916}
   - 114: {fileID: 11410992}
+  - 114: {fileID: 11432028}
   m_Layer: 9
   m_Name: FoodObject
   m_TagString: Untagged
@@ -339,7 +324,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 426654}
-  - {fileID: 426474}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &416218
@@ -355,18 +339,6 @@ Transform:
   - {fileID: 406320}
   m_Father: {fileID: 493238}
   m_RootOrder: 0
---- !u!4 &426474
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 115792}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 411718}
-  m_RootOrder: 1
 --- !u!4 &426654
 Transform:
   m_ObjectHideFlags: 1
@@ -970,18 +942,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 104412}
   m_Mesh: {fileID: 4300006, guid: 24f2c2078a465004b81cc89602af3f39, type: 3}
---- !u!65 &6502832
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 115792}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &6558936
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1023,6 +983,17 @@ MonoBehaviour:
   buildingLayer:
     serializedVersion: 2
     m_Bits: 512
+--- !u!114 &11432028
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d96aa07927b014097cb8abbb9da083, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11447916
 MonoBehaviour:
   m_ObjectHideFlags: 1

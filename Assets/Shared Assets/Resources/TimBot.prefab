@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 444366}
   - 33: {fileID: 3399780}
   - 23: {fileID: 2345768}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: minebot_main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 467264}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: TimBot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - 4: {fileID: 405726}
   - 33: {fileID: 3362562}
   - 23: {fileID: 2341978}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Box011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +59,7 @@ GameObject:
   - 4: {fileID: 417452}
   - 33: {fileID: 3353172}
   - 23: {fileID: 2353774}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Object002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   - 4: {fileID: 492724}
   - 33: {fileID: 3359050}
   - 23: {fileID: 2367124}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Box014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 475666}
   - 111: {fileID: 11183648}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: mine_bot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   - 4: {fileID: 450802}
   - 33: {fileID: 3384286}
   - 23: {fileID: 2374166}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: minebot_front_lowerleg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   - 4: {fileID: 428264}
   - 33: {fileID: 3378620}
   - 23: {fileID: 2372996}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Box004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,7 +143,7 @@ GameObject:
   - 4: {fileID: 456042}
   - 33: {fileID: 3390280}
   - 23: {fileID: 2302020}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Box007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   - 4: {fileID: 441344}
   - 33: {fileID: 3348220}
   - 23: {fileID: 2393532}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: minebot_front_upperleg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - 4: {fileID: 444338}
   - 33: {fileID: 3312298}
   - 23: {fileID: 2330070}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Box008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ GameObject:
   - 4: {fileID: 458320}
   - 33: {fileID: 3394856}
   - 23: {fileID: 2376444}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: minebot_back_lowerleg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,7 +211,7 @@ GameObject:
   - 4: {fileID: 419570}
   - 33: {fileID: 3377132}
   - 23: {fileID: 2322450}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: minebot_left_upperleg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,7 +228,7 @@ GameObject:
   - 4: {fileID: 432332}
   - 33: {fileID: 3360496}
   - 23: {fileID: 2383708}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: minebot_front_upperleg 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +243,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 495348}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - 4: {fileID: 488984}
   - 33: {fileID: 3382286}
   - 23: {fileID: 2346698}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Box010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -277,7 +277,7 @@ GameObject:
   - 4: {fileID: 438980}
   - 33: {fileID: 3380968}
   - 23: {fileID: 2348172}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Box003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   - 4: {fileID: 469524}
   - 33: {fileID: 3336174}
   - 23: {fileID: 2368126}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Box009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -311,7 +311,7 @@ GameObject:
   - 4: {fileID: 411014}
   - 33: {fileID: 3397026}
   - 23: {fileID: 2337850}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: minebot_right_lowerleg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -328,7 +328,7 @@ GameObject:
   - 4: {fileID: 465482}
   - 33: {fileID: 3361586}
   - 23: {fileID: 2361086}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Box005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -346,7 +346,7 @@ GameObject:
   - 33: {fileID: 3393196}
   - 23: {fileID: 2341304}
   - 111: {fileID: 11167692}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -363,7 +363,7 @@ GameObject:
   - 4: {fileID: 437848}
   - 33: {fileID: 3359142}
   - 23: {fileID: 2367038}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Box006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,7 +380,7 @@ GameObject:
   - 4: {fileID: 448960}
   - 33: {fileID: 3330324}
   - 23: {fileID: 2370904}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: minebot_right_upperleg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -397,7 +397,8 @@ GameObject:
   - 4: {fileID: 418784}
   - 33: {fileID: 3390722}
   - 23: {fileID: 2319446}
-  m_Layer: 2
+  - 114: {fileID: 11484636}
+  m_Layer: 11
   m_Name: Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -414,7 +415,7 @@ GameObject:
   - 4: {fileID: 426672}
   - 33: {fileID: 3346080}
   - 23: {fileID: 2302588}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Box013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -431,7 +432,7 @@ GameObject:
   - 4: {fileID: 420208}
   - 33: {fileID: 3387156}
   - 23: {fileID: 2350672}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Object001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -448,7 +449,7 @@ GameObject:
   - 4: {fileID: 433742}
   - 33: {fileID: 3357544}
   - 23: {fileID: 2318950}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Box012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -465,7 +466,7 @@ GameObject:
   - 4: {fileID: 496704}
   - 33: {fileID: 3342024}
   - 23: {fileID: 2395312}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Box002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -482,7 +483,7 @@ GameObject:
   - 4: {fileID: 467498}
   - 33: {fileID: 3336918}
   - 23: {fileID: 2339214}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: minebot_left_lowerleg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -501,7 +502,7 @@ GameObject:
   - 114: {fileID: 11480326}
   - 143: {fileID: 14335070}
   - 114: {fileID: 11403302}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: Bot CharacterController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -518,7 +519,7 @@ GameObject:
   - 4: {fileID: 478720}
   - 33: {fileID: 3370362}
   - 23: {fileID: 2328640}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: minebot_head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -570,7 +571,7 @@ Transform:
   m_GameObject: {fileID: 182296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.16252464, y: 0.16252464, z: 0.16252464}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 467264}
   m_RootOrder: 1
@@ -819,7 +820,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 102656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.37}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 432640}
@@ -1012,7 +1013,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 182296}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -1927,6 +1928,19 @@ MonoBehaviour:
   sleepVelocity: 0.2
   animationSpeed: 0.4
   endOfPathEffect: {fileID: 0}
+--- !u!114 &11484636
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c562313ec5743f043918dcb8e2f367f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 20
+  maxTime: 5
 --- !u!143 &14335070
 CharacterController:
   m_ObjectHideFlags: 1
@@ -1941,7 +1955,7 @@ CharacterController:
   m_Radius: 0.1
   m_SlopeLimit: 45
   m_StepOffset: 0
-  m_SkinWidth: 0.01
+  m_SkinWidth: 0.0001
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0.2, z: 0}
 --- !u!1001 &100100000
