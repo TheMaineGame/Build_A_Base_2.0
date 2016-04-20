@@ -100,6 +100,7 @@ public class CameraControll : MonoBehaviour {
 	{
         zoom.maxValue = maxZoom;
         zoom.minValue = minZoom;
+        zoom.value = maxZoom;
         width = Screen.width;
         height = Screen.height;
         focusPoint = GameObject.FindGameObjectWithTag("FocusPoint");
