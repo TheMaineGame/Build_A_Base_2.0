@@ -1939,7 +1939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c562313ec5743f043918dcb8e2f367f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 20
+  radius: 30
   maxTime: 5
 --- !u!143 &14335070
 CharacterController:

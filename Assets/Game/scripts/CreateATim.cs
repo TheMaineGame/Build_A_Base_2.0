@@ -7,8 +7,12 @@ public class CreateATim : MonoBehaviour {
     {
         if (Random.value <= 0.4f)
         {
-            GameObject tim = Instantiate(Resources.Load("TimBot", typeof(GameObject))) as GameObject;
-            tim.transform.position = transform.position;
+            int numberOfTims = Random.Range(1, 3);
+            for (int i = 0; i < numberOfTims; i++)
+            {
+                GameObject tim = Instantiate(Resources.Load("TimBot", typeof(GameObject))) as GameObject;
+                tim.transform.position = transform.position;
+            }
         }
     }
 }
