@@ -9,8 +9,8 @@ public class CallCube : MonoBehaviour {
     [SerializeField]
     LayerMask buildings;
 
-    const uint limit = 128;
-    static uint count = 0;
+    const sbyte limit = 128;
+    static sbyte count = 0;
 
     public void CubeCall () {
         if (count < limit) {
