@@ -1220,6 +1220,7 @@ GameObject:
   - 114: {fileID: 11412690}
   - 114: {fileID: 11434690}
   - 114: {fileID: 11420876}
+  - 114: {fileID: 11444132}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2412,7 +2413,7 @@ Transform:
   m_LocalScale: {x: 1.7391305, y: 1.7391305, z: 1.7391305}
   m_Children: []
   m_Father: {fileID: 22429188}
-  m_RootOrder: 3
+  m_RootOrder: 5
 --- !u!82 &8291342
 AudioSource:
   m_ObjectHideFlags: 1
@@ -5882,6 +5883,21 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: O
+--- !u!114 &11444132
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e421d6a96ef8947449cb28e807dade62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointer: {fileID: 0}
+  bbBoard: {fileID: 0}
+  anim: {fileID: 0}
+  gestureTime: 0
 --- !u!114 &11444232
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6866,7 +6882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.572}
+  m_Color: {r: 0, g: 1, b: 0.09019608, a: 0.572}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7583,7 +7599,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11462390}
   m_FillRect: {fileID: 22473178}
   m_HandleRect: {fileID: 22462862}
-  m_Direction: 2
+  m_Direction: 3
   m_MinValue: 3
   m_MaxValue: 40
   m_WholeNumbers: 0
@@ -8824,6 +8840,7 @@ MonoBehaviour:
   GameOverGO: {fileID: 128026}
   MainCanvas: {fileID: 141042}
   fillamount: {fileID: 11447684}
+  overlayColor: {fileID: 11460404}
 --- !u!114 &11482654
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11677,9 +11694,9 @@ RectTransform:
   - {fileID: 22423088}
   - {fileID: 22409668}
   - {fileID: 22408162}
-  - {fileID: 492478}
-  - {fileID: 22447722}
   - {fileID: 22463758}
+  - {fileID: 22447722}
+  - {fileID: 492478}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
@@ -12468,7 +12485,7 @@ RectTransform:
   m_LocalScale: {x: 1.5, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 22429188}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 160}
@@ -12631,7 +12648,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.25, y: 0}
   m_AnchorMax: {x: 0.75, y: 1}
-  m_AnchoredPosition: {x: 0, y: -5}
+  m_AnchoredPosition: {x: 0, y: 5}
   m_SizeDelta: {x: 0, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22470424
