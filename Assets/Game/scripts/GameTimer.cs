@@ -4,31 +4,40 @@ using UnityEngine.UI;
 
 public class GameTimer : MonoBehaviour {
 
+    public bool GameDone;
+    public bool takingPicture;
+
     [SerializeField] Text countDownTimer;
     [SerializeField]
     GameObject GameOverGO;
     [SerializeField]
     GameObject MainCanvas;
-
     [SerializeField]
     Image fillamount, overlayColor;
 
     
 
 	// Use this for initialization
-	void Start () {
-        Time.timeScale = 2;
-        StartCoroutine(CountDown());
+	void Awake () {
+        Time.timeScale = 1;
+        
+        
 	}
 	
     public void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            StartCoroutine(CountDown());
+        }
+        Debug.Log(Time.timeSinceLevelLoad);
         fillamount.fillAmount += Time.deltaTime / 60;
     }
 
     public void GameOver()
     {
         MainCanvas.SetActive(false);
+        GameDone = true;   
         GameOverGO.SetActive(true);
     }
 
@@ -36,7 +45,10 @@ public class GameTimer : MonoBehaviour {
     {
         int timer = 60;
         while (timer > 0)
-        {
+		{
+			countDownTimer.transform.localScale = Vector3.one * 1.3f;
+			countDownTimer.gameObject.ScaleTo(Vector3.one, 0.9f, 0f, EaseType.linear);
+
             if (timer == 41)
             {
                 overlayColor.color = Color.yellow;
@@ -51,6 +63,9 @@ public class GameTimer : MonoBehaviour {
             countDownTimer.text = timer.ToString();
             yield return new WaitForSeconds(1);
         }
-        GameOver();
+        if (takingPicture == false)
+        {
+            GameOver();
+        }
     }
 }

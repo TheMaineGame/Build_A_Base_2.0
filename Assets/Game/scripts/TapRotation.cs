@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using System.Collections;
 using System;
@@ -9,6 +10,22 @@ public class TapRotation : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
 
     [SerializeField]
     LayerMask buildingLayer;
+
+    [SerializeField]
+    float riseUnitsPerSec = 1;
+
+    [SerializeField]
+    float rotationDuration = 1;
+
+    [SerializeField]
+    float lowerUnitsPerSec = 1;
+
+    [SerializeField]
+    float levitateHeight = 3;
+
+    [Tooltip ("Optional")]
+    [SerializeField]
+    UnityEvent cantRotate;
 
     public void OnBeginDrag (PointerEventData eventData) {
         dragged = true;
@@ -22,27 +39,61 @@ public class TapRotation : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
     }
 
     void Rotate () {
-        Bounds bounds;
+        Bounds bounds = box.bounds;
         var i = 0;
         bool intersect = false;
+        var check = Quaternion.identity;
+        var point = gameObject.transform.position;
         do {
-            gameObject.transform.rotation *= Quaternion.Euler (0, 90, 0);
-            bounds = box.bounds;
+            check *= Quaternion.Euler (0, 90, 0);
             box.enabled = false;
+            var center = (check * (bounds.center - point)) + point;
             intersect = Physics.CheckBox (
-                bounds.center,
+                center,
                 bounds.extents,
-                Quaternion.identity,
+                check,
                 buildingLayer);
             box.enabled = true;
-            // Debug.Log ("Intersecting: " + intersect);
-            // Debug.Log ("Bounds: " + bounds);
+            //Debug.Log ("Intersecting: " + intersect);
+            //Debug.Log ("Center: " + center);
+            //Debug.Log ("Extents: " + check * bounds.extents);
             i++;
-        } while (i < 4
-            && intersect);
+        } while (i < 4 && intersect);
+        if (i == 4) {
+            cantRotate.Invoke ();
+        }
+        else {
+            StartCoroutine (RotateCoroutine (check * gameObject.transform.rotation));
+        }
     }
 
-    void Start() {
+    IEnumerator RotateCoroutine (Quaternion newRot) {
+        var time = 0f;
+        var oPos = gameObject.transform.position; // for "orginal position"
+        var newPos = gameObject.transform.position + Vector3.up * levitateHeight;
+        var riseTime = levitateHeight / riseUnitsPerSec;
+        while (time < riseTime) {
+            time += Time.deltaTime;
+            gameObject.transform.position = Vector3.Lerp (oPos, newPos, time / riseTime);
+            yield return null;
+        }
+        time = 0;
+        var oRot = gameObject.transform.rotation;
+        while (time < rotationDuration) {
+            time += Time.deltaTime;
+            gameObject.transform.rotation = Quaternion.Lerp (oRot, newRot, time / rotationDuration);
+            yield return null;
+        }
+        time = 0;
+        var lowTime = levitateHeight / lowerUnitsPerSec;
+        while (time < lowTime) {
+            time += Time.deltaTime;
+            gameObject.transform.position = Vector3.Lerp (newPos, oPos, time / lowTime);
+            yield return null;
+        }
+    }
+
+    void Start () {
         box = gameObject.GetComponent<BoxCollider> ();
     }
 }
