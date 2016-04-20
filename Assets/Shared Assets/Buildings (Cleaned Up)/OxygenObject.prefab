@@ -27,6 +27,7 @@ GameObject:
   - 4: {fileID: 434246}
   - 65: {fileID: 6522338}
   - 114: {fileID: 11489658}
+  - 114: {fileID: 11499072}
   m_Layer: 9
   m_Name: OxygenObject
   m_TagString: Untagged
@@ -417,6 +418,29 @@ MonoBehaviour:
   buildings:
     serializedVersion: 2
     m_Bits: 512
+--- !u!114 &11499072
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33dfe18facbf51e438378137183f1719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  riseUnitsPerSec: 2
+  rotationDuration: 1
+  lowerUnitsPerSec: 2
+  levitateHeight: 2
+  cantRotate:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
