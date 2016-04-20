@@ -15,7 +15,7 @@ public class GameTimer : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Time.timeScale = 2;
+        Time.timeScale = 1;
         StartCoroutine(CountDown());
 	}
 	

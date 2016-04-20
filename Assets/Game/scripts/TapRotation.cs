@@ -22,6 +22,7 @@ public class TapRotation : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
     }
 
     void Rotate () {
+        var origBounds = box.bounds;
         Bounds bounds;
         var i = 0;
         bool intersect = false;
@@ -40,6 +41,8 @@ public class TapRotation : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
             i++;
         } while (i < 4
             && intersect);
+        AstarPath.active.UpdateGraphs(box.bounds);
+        AstarPath.active.UpdateGraphs(origBounds);
     }
 
     void Start() {
