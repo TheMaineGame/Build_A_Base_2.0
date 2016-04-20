@@ -639,7 +639,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &128986
 GameObject:
   m_ObjectHideFlags: 1
@@ -1007,7 +1007,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &141636
 GameObject:
   m_ObjectHideFlags: 1
@@ -8853,12 +8853,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae5ba2a2613422f4ea296817c9b1222d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameDone: 0
+  GameDone: 1
   takingPicture: 0
   countDownTimer: {fileID: 11421828}
   GameOverGO: {fileID: 128026}
   MainCanvas: {fileID: 141042}
   fillamount: {fileID: 11464696}
+  overlayColor: {fileID: 0}
 --- !u!114 &11482654
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10876,6 +10877,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -10894,6 +10896,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -10912,6 +10915,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
