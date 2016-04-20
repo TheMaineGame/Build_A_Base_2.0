@@ -59,8 +59,8 @@ public class email : MonoBehaviour {
     IEnumerator QueEnd()
     {
         yield return new WaitForSeconds(2f);
-        //snapShot.SetActive(false);
-        gameObject.GetComponent<GameTimer>().GameOver();
+        snapShot.SetActive(false);
+        GameOver.SetActive(true);
         Time.timeScale = 0.0f;
         //disable user controls
 

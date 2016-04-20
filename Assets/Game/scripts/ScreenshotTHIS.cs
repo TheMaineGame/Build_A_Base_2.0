@@ -9,16 +9,6 @@ public class ScreenshotTHIS : MonoBehaviour {
     GameObject input;
     [SerializeField]
     GameObject Image;
-    [SerializeField]
-    GameObject GameOver;
-    [SerializeField]
-    GameObject ConfirmButtons;
-
-
-    [SerializeField]
-    GameObject Slider;
-    [SerializeField]
-    GameObject CameraImage;
 
     [SerializeField]
     CameraControll customCamera;
@@ -34,22 +24,10 @@ public class ScreenshotTHIS : MonoBehaviour {
     public void OnClick ()
     {
         Canvas.SetActive(false);
-        GameOver.SetActive(false);
-        gameObject.GetComponent<GameTimer>().takingPicture = true;
-        Slider.SetActive(true);
-        CameraImage.SetActive(false);
-        ConfirmButtons.SetActive(true);
-	}
-
-    public void TakePicture()
-    {
-        Slider.SetActive(false);
-        ConfirmButtons.SetActive(false);
         Application.CaptureScreenshot("Screenshot.png");
         StartCoroutine("Enable");
         customCamera.enabled = false;
-    }
-
+	}
     IEnumerator Enable()
     {
         yield return new WaitForSeconds(0.5f);
@@ -59,6 +37,7 @@ public class ScreenshotTHIS : MonoBehaviour {
         Image.SetActive(false);
         yield return new WaitForSeconds(0.45f);
         input.SetActive(true);
-        
+        Canvas.SetActive(true);
+
     }
 }
