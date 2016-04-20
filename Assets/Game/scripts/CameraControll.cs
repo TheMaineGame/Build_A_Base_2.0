@@ -12,7 +12,7 @@ public class CameraControll : MonoBehaviour {
     public rotateMode rotateButton;
     public panMode panButton;
 
-    GameObject cameraObject;
+    //GameObject cameraObject;
 
     GameObject actuallyCamera;
 
@@ -24,13 +24,13 @@ public class CameraControll : MonoBehaviour {
 
     int panInt;
 
-    GameObject focusPoint;
+    //GameObject focusPoint;
 
     [SerializeField]
     Slider zoom;
 
-    [SerializeField]
-    float dragSpeed = 1;
+    //[SerializeField]
+    //float dragSpeed = 1;
 
     private Vector3 panOrigin;
 
@@ -92,22 +92,22 @@ public class CameraControll : MonoBehaviour {
 
     bool dragging;
 
-    float width;
-    float height;
-    float boundary = 1;
+    //float width;
+    //float height;
+    //float boundary = 1;
 
     void Start()
 	{
         zoom.maxValue = maxZoom;
         zoom.minValue = minZoom;
         zoom.value = maxZoom;
-        width = Screen.width;
-        height = Screen.height;
-        focusPoint = GameObject.FindGameObjectWithTag("FocusPoint");
+        //width = Screen.width;
+        //height = Screen.height;
+        //focusPoint = GameObject.FindGameObjectWithTag("FocusPoint");
         transform.parent.position = new Vector3(0, 0, 0);
         panInt = (int)panButton;
         rotateInt = (int)rotateButton;
-        cameraObject = this.gameObject;
+        //cameraObject = this.gameObject;
         actuallyCamera = this.gameObject.transform.parent.gameObject;
         actuallCameraObject = this.gameObject.transform.GetChild(0).gameObject;
         actuallCamera = GetComponentInChildren<Camera>();
@@ -123,8 +123,8 @@ public class CameraControll : MonoBehaviour {
 
     void Update()
 	{
-        float xMouse = Input.mousePosition.x;
-        float yMouse = Input.mousePosition.y;
+        //float xMouse = Input.mousePosition.x;
+        //float yMouse = Input.mousePosition.y;
 
 		if (Input.GetMouseButtonDown(panInt) || Input.GetMouseButtonDown(rotateInt)) {
 			RaycastHit hit;
@@ -136,13 +136,13 @@ public class CameraControll : MonoBehaviour {
 			}
 		}
 
-        float xpos = Input.mousePosition.x;
-        float ypos = Input.mousePosition.y;
-        Vector3 movement = new Vector3(0, 0, 0);
+        //float xpos = Input.mousePosition.x;
+        //float ypos = Input.mousePosition.y;
+        //Vector3 movement = new Vector3(0, 0, 0);
 
         curZoom = Mathf.Lerp(curZoom, currentZoom, Time.deltaTime * zoomSpeed);
 
-        float fov = actuallCamera.fieldOfView;       
+        //float fov = actuallCamera.fieldOfView;       
 
 //        Ray ray = Camera.main.ScreenPointToRay(new Vector3(screenWidth/2 , screenHeight/2));
 //        RaycastHit hit;

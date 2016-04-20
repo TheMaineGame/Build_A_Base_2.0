@@ -16,13 +16,19 @@ public class GameTimer : MonoBehaviour {
     
 
 	// Use this for initialization
-	void Start () {
-        Time.timeScale = 2;
-        StartCoroutine(CountDown());
+	void Awake () {
+        Time.timeScale = 1;
+        
+        
 	}
 	
     public void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            StartCoroutine(CountDown());
+        }
+        Debug.Log(Time.timeSinceLevelLoad);
         fillamount.fillAmount += Time.deltaTime / 60;
     }
 
@@ -34,9 +40,11 @@ public class GameTimer : MonoBehaviour {
 
     IEnumerator CountDown()
     {
-        int timer = 60;
-        while (timer > 0)
+        countDownTimer.gameObject.ScaleTo(Vector3.zero, 0.5f, 0f, EaseType.linear, LoopType.pingPong);
+        int timer = 0;
+        while (timer < 100)
         {
+            
             if (timer == 41)
             {
                 overlayColor.color = Color.yellow;
@@ -47,7 +55,7 @@ public class GameTimer : MonoBehaviour {
                 overlayColor.color = Color.red;
                 countDownTimer.color = Color.red;
             }
-            timer--;
+            timer++;
             countDownTimer.text = timer.ToString();
             yield return new WaitForSeconds(1);
         }
