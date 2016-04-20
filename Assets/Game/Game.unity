@@ -632,6 +632,10 @@ Prefab:
       propertyPath: anim
       value: 
       objectReference: {fileID: 142032387}
+    - target: {fileID: 11420876, guid: 2373ee7e8a93e6048b93dfbe6431c2fb, type: 2}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 1910871923}
     m_RemovedComponents:
     - {fileID: 11444132, guid: 2373ee7e8a93e6048b93dfbe6431c2fb, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2373ee7e8a93e6048b93dfbe6431c2fb, type: 2}
@@ -1032,6 +1036,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 68d707546ed06ff40b15fb1e6c43a116, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1910871923 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 128026, guid: 2373ee7e8a93e6048b93dfbe6431c2fb, type: 2}
+  m_PrefabInternal: {fileID: 696463680}
 --- !u!1001 &1941673683
 Prefab:
   m_ObjectHideFlags: 0
