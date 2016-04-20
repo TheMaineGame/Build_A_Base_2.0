@@ -30,14 +30,24 @@ public class TapRotation : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
             gameObject.transform.rotation *= Quaternion.Euler (0, 90, 0);
             bounds = box.bounds;
             box.enabled = false;
+            //var colliders = Physics.OverlapBox (
+            //    bounds.center,
+            //    bounds.extents,
+            //    Quaternion.identity,
+            //    buildingLayer);
             intersect = Physics.CheckBox (
                 bounds.center,
                 bounds.extents,
                 Quaternion.identity,
                 buildingLayer);
             box.enabled = true;
-            // Debug.Log ("Intersecting: " + intersect);
-            // Debug.Log ("Bounds: " + bounds);
+            //Debug.Log ("Intersecting: " + intersect);
+            //if (intersect) {
+            //    foreach (var c in colliders) {
+            //        Debug.Log (c);
+            //    }
+            //}
+            //Debug.Log ("Bounds: " + bounds);
             i++;
         } while (i < 4
             && intersect);
