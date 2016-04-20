@@ -4,12 +4,14 @@ using UnityEngine.UI;
 
 public class GameTimer : MonoBehaviour {
 
+    public bool GameDone;
+    public bool takingPicture;
+
     [SerializeField] Text countDownTimer;
     [SerializeField]
     GameObject GameOverGO;
     [SerializeField]
     GameObject MainCanvas;
-
     [SerializeField]
     Image fillamount, overlayColor;
 
@@ -29,6 +31,7 @@ public class GameTimer : MonoBehaviour {
     public void GameOver()
     {
         MainCanvas.SetActive(false);
+        GameDone = true;   
         GameOverGO.SetActive(true);
     }
 
@@ -51,6 +54,9 @@ public class GameTimer : MonoBehaviour {
             countDownTimer.text = timer.ToString();
             yield return new WaitForSeconds(1);
         }
-        GameOver();
+        if (takingPicture == false)
+        {
+            GameOver();
+        }
     }
 }

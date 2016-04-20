@@ -117,6 +117,7 @@ public class CameraControll : MonoBehaviour {
         {
             throw new System.Exception("Buttons should not be the same");
         }
+        zoom.value = Mathf.Lerp(0, 35, 1);
 
         //groundPlane = Plane (groundNormal, groundPoint);
     }
