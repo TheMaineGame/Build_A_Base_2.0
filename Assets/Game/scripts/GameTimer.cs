@@ -36,7 +36,7 @@ public class GameTimer : MonoBehaviour {
         {
             StartCoroutine(CountDown());
         }
-        Debug.Log(Time.timeSinceLevelLoad);
+        // Debug.Log(Time.timeSinceLevelLoad);
         fillamount.fillAmount += Time.deltaTime / 60;
     }
 
