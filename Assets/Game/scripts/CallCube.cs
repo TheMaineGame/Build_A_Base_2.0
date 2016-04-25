@@ -46,6 +46,7 @@ public class CallCube : MonoBehaviour {
             }
             var building = Instantiate (m_livingQuarters);
             building.transform.position = pos + offset;
+            AstarPath.active.UpdateGraphs(building.GetComponent<BoxCollider>().bounds);
             count++;
         }
     }

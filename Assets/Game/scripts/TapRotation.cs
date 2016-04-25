@@ -39,6 +39,7 @@ public class TapRotation : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
     }
 
     void Rotate () {
+        var origBounds = box.bounds;
         Bounds bounds = box.bounds;
         var i = 0;
         bool intersect = false;
@@ -65,6 +66,8 @@ public class TapRotation : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
         else {
             StartCoroutine (RotateCoroutine (check * gameObject.transform.rotation));
         }
+        AstarPath.active.UpdateGraphs(box.bounds);
+        AstarPath.active.UpdateGraphs(origBounds);
     }
 
     IEnumerator RotateCoroutine (Quaternion newRot) {
