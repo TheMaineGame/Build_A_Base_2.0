@@ -8,8 +8,17 @@ public class CallCube : MonoBehaviour {
     Transform cameraPos;
     [SerializeField]
     LayerMask buildings;
+	AudioSource au_BuildPlace;
 
+	void Start()
+	{
+		au_BuildPlace = (AudioSource)gameObject.AddComponent <AudioSource>();
+		AudioClip au_BuildPlaceClip;
+		au_BuildPlaceClip = (AudioClip)Resources.Load ("BuildPlace");
+		au_BuildPlace.clip = au_BuildPlaceClip;
+	}
     public void CubeCall () {
+		au_BuildPlace.Play ();
         var pos = new Vector3 (
             Mathf.Round (cameraPos.position.x),
             Mathf.Round (cameraPos.position.y),
