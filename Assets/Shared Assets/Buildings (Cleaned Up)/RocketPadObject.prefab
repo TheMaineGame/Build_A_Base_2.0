@@ -10,6 +10,8 @@ GameObject:
   - 4: {fileID: 416004}
   - 65: {fileID: 6513732}
   - 114: {fileID: 11446126}
+  - 114: {fileID: 11469004}
+  - 114: {fileID: 11466038}
   m_Layer: 9
   m_Name: RocketPadObject
   m_TagString: Untagged
@@ -669,6 +671,31 @@ MonoBehaviour:
   buildings:
     serializedVersion: 2
     m_Bits: 512
+--- !u!114 &11466038
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 111008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a8042ca5a1e5b741a68b3ebbd0a280d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11469004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 111008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33dfe18facbf51e438378137183f1719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
