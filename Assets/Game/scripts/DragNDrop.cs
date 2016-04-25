@@ -35,8 +35,18 @@ public class DragNDrop : MonoBehaviour, IDragHandler {
         if (Physics.Raycast (toFloor, out hit, 10000, floor)) {
             var point = hit.point;
             var snapped = new Vector3 (Mathf.Round (point.x), Mathf.Round (point.y), Mathf.Round (point.z));
-            if (!Physics.CheckBox(point, box.bounds.extents, transform.rotation, buildings))
+            var offset = snapped - gameObject.transform.position;
+            var extents = box.bounds.extents;
+            var center = gameObject.transform.rotation * box.center;
+            Debug.Log("Checking point " + (snapped + center) + ", extents " + extents);
+            box.enabled = false;
+            Debug.Log ("Box.enabled is " + box.enabled);
+            var colliders = Physics.OverlapBox (snapped + center, extents, Quaternion.identity, buildings);
+            foreach (var c in colliders)
+                Debug.Log ("Overlapping: " + c);
+            if (!Physics.CheckBox(snapped + center, extents, Quaternion.identity, buildings))
                 gameObject.transform.position = snapped;
+            box.enabled = true;
         }
     }
 }
