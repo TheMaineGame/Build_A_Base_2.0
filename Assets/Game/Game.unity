@@ -1641,6 +1641,52 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 150601860}
+--- !u!1001 &158368710
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 467264, guid: e4ba5c4337e43e042b08c7d2efc0ad07, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 467264, guid: e4ba5c4337e43e042b08c7d2efc0ad07, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 467264, guid: e4ba5c4337e43e042b08c7d2efc0ad07, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 467264, guid: e4ba5c4337e43e042b08c7d2efc0ad07, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 467264, guid: e4ba5c4337e43e042b08c7d2efc0ad07, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 467264, guid: e4ba5c4337e43e042b08c7d2efc0ad07, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 467264, guid: e4ba5c4337e43e042b08c7d2efc0ad07, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 467264, guid: e4ba5c4337e43e042b08c7d2efc0ad07, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 102656, guid: e4ba5c4337e43e042b08c7d2efc0ad07, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e4ba5c4337e43e042b08c7d2efc0ad07, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &196634975
 GameObject:
   m_ObjectHideFlags: 0
@@ -9639,6 +9685,14 @@ Prefab:
     - target: {fileID: 437884, guid: 10672dd69cdc83349b25b1d7c729dfcc, type: 2}
       propertyPath: m_RootOrder
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 11474534, guid: 10672dd69cdc83349b25b1d7c729dfcc, type: 2}
+      propertyPath: astarData.dataString
+      value: UEsDBBQAAAgIAACYn+shiAQ87wEAAM4DAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1Ul2P2jAQ/CuVn1OUBEhL3q5wRytde+i4qs8m2ZAVjh35o3yc+O9dmxDISX2x5Jn17M6s39nWYcnyd/aXCwcsZ5AlMUzKLE3LySTNss+zdMxnWZpNprNxNvk6Y+eIcdNCYV+5RcXyJGJoVANWY/Egt4JU4og5iZXSzWO5hbky1rC84sJAxLSy/p30TQ+h9BjOE50kXYC0oP9DOlkI3rRQrvEEXU12Kco8L1UJFyoeZaSlhEDT9bLH1vtbtzVoYBErkdPMvlU8mkasBtzWluXp3bOXqjJgwwCaHxeoyXRQY9+UrUmj4WZ3F940Sc9XpZ9Dahx/GRNXadV87zolcUzCtsZi98qPBTeEWe1giC36MRPvf8/Fjm8E/KlB/lJLrZws+2idgXTR33ob8xqK3VX7Mt0Acu0g7qSL++z9HeYCmw3NPxrPbveHA5pQSMBaKB9sSnmDpvx/0LBhwSaESZif4beBN769/YIOfkJtLBFBjDurnlHulhrLW+UVXaCxz9hgSI5W7X1slNNUyR5DomTZ2bnSEjx48daC5MIeV9TNDjf6gen7fcCfeGGVvn/R/fFheQCvtWkcVntPrdTe75A+GkrS5WJ1IYMwBSivA0taNznyGXxaat76b1Zqvl/iqVG9LZSVWhcaQL6Et2GY8z9QSwMEFAAACAAAAJif6x5/XXYyAAAAMgAAABIAJABncmFwaDBfZWRpdG9yLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF7ImxvY2tlZCI6dHJ1ZSwic2hvd0V4dHJhIjpmYWxzZSwicGl2b3QiOiJDZW50ZXIifVBLAwQUAAAICAAAmJ/r3EDZJ3QAAACDAAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAR2MsQ6CMBBA/+VmbOBaL5TVgc24G4Ymd8INtqQUE2P8d6nbG957H3hJ3jRFGMCa3iA0MOewLhsM3YG78kF3EOpacUyI7BwSnTza4AnJnb0l13uYGijvVa7hKf/iFsry0MgaZzNm5bFeqxUTyyXtsVStnb4/UEsBAi0AFAAACAgAAJif6yGIBDzvAQAAzgMAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAAAAJif6x5/XXYyAAAAMgAAABIAJAAAAAAAAAAAAAAAPAIAAGdyYXBoMF9lZGl0b3IuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAACYn+vcQNkndAAAAIMAAAAJACQAAAAAAAAAAAAAAMICAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAMAAwAcAQAAgQMAAAAA
+      objectReference: {fileID: 0}
+    - target: {fileID: 11474534, guid: 10672dd69cdc83349b25b1d7c729dfcc, type: 2}
+      propertyPath: lastUniqueAreaIndex
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 10672dd69cdc83349b25b1d7c729dfcc, type: 2}
