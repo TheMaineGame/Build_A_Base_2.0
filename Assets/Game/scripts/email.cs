@@ -28,7 +28,7 @@ public class email : MonoBehaviour {
 			mail.Subject = "Build-a-Base";
 			mail.Body = "Your Finished Base";
 
-			string thing = "New Unity Project 2_Data/";
+			string thing = "Build_A_Base_2.0_Data/";
 			#if UNITY_EDITOR
 			thing = "";
 			#endif
@@ -59,8 +59,8 @@ public class email : MonoBehaviour {
     IEnumerator QueEnd()
     {
         yield return new WaitForSeconds(2f);
-        snapShot.SetActive(false);
-        GameOver.SetActive(true);
+        //snapShot.SetActive(false);
+        gameObject.GetComponent<GameTimer>().GameOver();
         Time.timeScale = 0.0f;
         //disable user controls
 
