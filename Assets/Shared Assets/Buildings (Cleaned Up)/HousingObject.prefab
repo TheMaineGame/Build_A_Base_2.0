@@ -61,7 +61,6 @@ GameObject:
   - 4: {fileID: 439234}
   - 65: {fileID: 6547444}
   - 114: {fileID: 11479954}
-  - 114: {fileID: 11413094}
   m_Layer: 9
   m_Name: HousingObject
   m_TagString: Untagged
@@ -527,29 +526,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &11413094
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 147868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33dfe18facbf51e438378137183f1719, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buildingLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  riseUnitsPerSec: 2
-  rotationDuration: 1
-  lowerUnitsPerSec: 2
-  levitateHeight: 2
-  cantRotate:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
 --- !u!114 &11479954
 MonoBehaviour:
   m_ObjectHideFlags: 1
