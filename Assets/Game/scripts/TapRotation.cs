@@ -80,14 +80,14 @@ public class TapRotation : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
         var riseTime = levitateHeight / riseUnitsPerSec;
         var ghost = new GameObject (gameObject.name + " ghost", typeof (BoxCollider));
         { // Scope for creating the ghost, so unnecessary variables get GC'd
-            var boundsCenter = box.bounds.center;
             ghost.transform.position = oPos;
+            ghost.transform.rotation = newRot;
             if (!Mathf.IsPowerOfTwo (ghostLayer.value))
                 throw new ArgumentException ("Ghost layer mask is not a single layer");
             ghost.layer = (int) Mathf.Log(ghostLayer.value,2);
             var ghostbox = ghost.GetComponent<BoxCollider> ();
-            ghostbox.center = (newRot * (boundsCenter - oPos)) + oPos;
-            ghostbox.size = newRot * box.size;
+            ghostbox.size = box.size;
+            ghostbox.center = box.center;
         }
         // Rising
         while (time < riseTime) {
@@ -100,7 +100,7 @@ public class TapRotation : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
         var oRot = gameObject.transform.rotation;
         while (time < rotationDuration) {
             time += Time.deltaTime;
-            gameObject.transform.rotation = Quaternion.Lerp (oRot, newRot, time / rotationDuration);
+            gameObject.transform.rotation = Quaternion.Slerp (oRot, newRot, time / rotationDuration);
             yield return null;
         }
         time = 0;
