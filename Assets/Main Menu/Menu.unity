@@ -230,7 +230,7 @@ Prefab:
     - target: {fileID: 9578834, guid: c0b4de5c70802a84e9187a0bf24e0f5d, type: 2}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: b78bc4f7d5b3caa4e990fb474c32d49d, type: 2}
+      objectReference: {fileID: 9100000, guid: 9b5b88f256cf18149bc4ba0afbf55097, type: 2}
     - target: {fileID: 11443770, guid: c0b4de5c70802a84e9187a0bf24e0f5d, type: 2}
       propertyPath: m_Sprite
       value: 
@@ -240,6 +240,15 @@ Prefab:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 918b4dadf0640424292e490c671484e0,
+        type: 3}
+    - target: {fileID: 9578834, guid: c0b4de5c70802a84e9187a0bf24e0f5d, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453158, guid: c0b4de5c70802a84e9187a0bf24e0f5d, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e642531b6a894d14897bef1637efceba,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c0b4de5c70802a84e9187a0bf24e0f5d, type: 2}
