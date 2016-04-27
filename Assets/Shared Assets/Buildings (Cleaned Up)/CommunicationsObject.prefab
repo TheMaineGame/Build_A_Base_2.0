@@ -489,7 +489,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
+  ghostLayer:
+    serializedVersion: 2
+    m_Bits: 512
   riseUnitsPerSec: 2
   rotationDuration: 1
   lowerUnitsPerSec: 2
