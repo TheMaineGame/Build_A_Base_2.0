@@ -1371,7 +1371,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
+  ghostLayer:
+    serializedVersion: 2
+    m_Bits: 512
   riseUnitsPerSec: 2
   rotationDuration: 1
   lowerUnitsPerSec: 2
@@ -1439,7 +1442,7 @@ ParticleSystem:
   randomSeed: 0
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   moveWithTransform: 0
   scalingMode: 1
   InitialModule:
