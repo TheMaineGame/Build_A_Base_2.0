@@ -701,6 +701,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11450030, guid: 58c541730e2b51e4b8de9fd45cbefcc3, type: 2}
+      propertyPath: ghostLayer.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 19817454, guid: 58c541730e2b51e4b8de9fd45cbefcc3, type: 2}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 58c541730e2b51e4b8de9fd45cbefcc3, type: 2}
   m_IsPrefabParent: 0
@@ -799,11 +807,11 @@ Prefab:
       objectReference: {fileID: 786371479}
     - target: {fileID: 22457352, guid: beefc4af6c6381c4283e1ca8bc56e39d, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22446196, guid: beefc4af6c6381c4283e1ca8bc56e39d, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22480060, guid: beefc4af6c6381c4283e1ca8bc56e39d, type: 2}
       propertyPath: m_AnchorMin.y
@@ -1214,6 +1222,18 @@ Prefab:
     - target: {fileID: 482576, guid: 5090b9388deeddf4cac29542d417f229, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11474380, guid: 5090b9388deeddf4cac29542d417f229, type: 2}
+      propertyPath: buildingLayer.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 11474380, guid: 5090b9388deeddf4cac29542d417f229, type: 2}
+      propertyPath: ghostLayer.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 19804688, guid: 5090b9388deeddf4cac29542d417f229, type: 2}
+      propertyPath: playOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5090b9388deeddf4cac29542d417f229, type: 2}
