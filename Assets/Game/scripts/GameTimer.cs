@@ -2,12 +2,14 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class GameTimer : MonoBehaviour {
+public class GameTimer : MonoBehaviour
+{
 
     public bool GameDone;
     public bool takingPicture;
 
-    [SerializeField] Text countDownTimer;
+    [SerializeField]
+    Text countDownTimer;
     [SerializeField]
     GameObject GameOverGO;
     [SerializeField]
@@ -21,22 +23,20 @@ public class GameTimer : MonoBehaviour {
     [SerializeField]
     GameObject SliderCanvas;
 
-    
 
-	// Use this for initialization
-	void Awake () {
+
+    // Use this for initialization
+    void Awake()
+    {
         Time.timeScale = 1;
-        
-        
-	}
-	
+        StartCoroutine(CountDown());
+
+
+    }
+
     public void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            StartCoroutine(CountDown());
-        }
-        Debug.Log(Time.timeSinceLevelLoad);
+
         fillamount.fillAmount += Time.deltaTime / 60;
     }
 
@@ -54,16 +54,16 @@ public class GameTimer : MonoBehaviour {
     {
         int timer = 60;
         while (timer > 0)
-		{
-			countDownTimer.transform.localScale = Vector3.one * 1.3f;
-            countDownTimer.gameObject.ScaleTo(Vector3.one, 0.9f, 0f, EaseType.linear) ;
+        {
+            countDownTimer.transform.localScale = Vector3.one * 1.3f;
+            countDownTimer.gameObject.ScaleTo(Vector3.one, 0.9f, 0f, EaseType.linear);
 
             if (timer == 40)
             {
                 overlayColor.color = Color.yellow;
                 countDownTimer.color = Color.yellow;
             }
-            if(timer == 20)
+            if (timer == 20)
             {
                 overlayColor.color = Color.red;
                 countDownTimer.color = Color.red;
