@@ -56,14 +56,14 @@ public class GameTimer : MonoBehaviour {
         while (timer > 0)
 		{
 			countDownTimer.transform.localScale = Vector3.one * 1.3f;
-			countDownTimer.gameObject.ScaleTo(Vector3.one, 0.9f, 0f, EaseType.linear);
+            countDownTimer.gameObject.ScaleTo(Vector3.one, 0.9f, 0f, EaseType.linear) ;
 
-            if (timer == 41)
+            if (timer == 40)
             {
                 overlayColor.color = Color.yellow;
                 countDownTimer.color = Color.yellow;
             }
-            if(timer == 21)
+            if(timer == 20)
             {
                 overlayColor.color = Color.red;
                 countDownTimer.color = Color.red;

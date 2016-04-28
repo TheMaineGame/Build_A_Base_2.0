@@ -246,7 +246,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 084bdf0fbd370824ca5e3e38c20f66af, type: 2}
+  - {fileID: 2100000, guid: 8a0e096467a829e4385c4e903f67a8cc, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -272,7 +272,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: ce660781800fe1e43a8ad05751f7f5d5, type: 2}
+  - {fileID: 2100000, guid: c712ccd4f20acac489d2bf9c175bab54, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -324,7 +324,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 5fafe80a9f26fd54381b9dc346c5fd6b, type: 2}
+  - {fileID: 2100000, guid: 770a8fdd1eced1e42bbf4dd8e05d1881, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -443,7 +443,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
+  ghostLayer:
+    serializedVersion: 2
+    m_Bits: 512
   riseUnitsPerSec: 2
   rotationDuration: 1
   lowerUnitsPerSec: 2
