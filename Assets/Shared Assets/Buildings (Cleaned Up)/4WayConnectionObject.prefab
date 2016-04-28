@@ -25,6 +25,7 @@ GameObject:
   - 4: {fileID: 471342}
   - 65: {fileID: 6578194}
   - 114: {fileID: 11488142}
+  - 114: {fileID: 11418778}
   m_Layer: 9
   m_Name: 4WayConnectionObject
   m_TagString: Untagged
@@ -131,7 +132,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.9, y: 0.9, z: 0.9}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!111 &11178196
 Animation:
@@ -147,6 +148,29 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &11418778
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33dfe18facbf51e438378137183f1719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  riseUnitsPerSec: 2
+  rotationDuration: 1
+  lowerUnitsPerSec: 2
+  levitateHeight: 2
+  cantRotate:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!114 &11488142
 MonoBehaviour:
   m_ObjectHideFlags: 1
