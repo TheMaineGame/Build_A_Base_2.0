@@ -466,6 +466,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -622,6 +623,8 @@ GameObject:
   - 224: {fileID: 59314051}
   - 114: {fileID: 1399990204}
   - 114: {fileID: 59314052}
+  - 95: {fileID: 59314053}
+  - 114: {fileID: 59314054}
   m_Layer: 0
   m_Name: Slider
   m_TagString: Untagged
@@ -704,6 +707,35 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!95 &59314053
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 59314050}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 07537fa7e01384f419e33dc65fe5d97e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &59314054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 59314050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52ca7978435fc89449d80a555a5e483b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 59314053}
 --- !u!1 &62010869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1060,6 +1092,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -3551,6 +3584,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -4388,13 +4422,13 @@ Prefab:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11442168, guid: 54ca51431ef55684da3405e9f820376f, type: 2}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 59314053}
+    - target: {fileID: 11442168, guid: 54ca51431ef55684da3405e9f820376f, type: 2}
       propertyPath: zoom
       value: 
       objectReference: {fileID: 1399990204}
-    - target: {fileID: 11471680, guid: 54ca51431ef55684da3405e9f820376f, type: 2}
-      propertyPath: m_EventMask.m_Bits
-      value: 768
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54ca51431ef55684da3405e9f820376f, type: 2}
   m_IsPrefabParent: 0
@@ -9856,10 +9890,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 1659902143}
   m_HandleRect: {fileID: 1207021300}
   m_Direction: 3
-  m_MinValue: 3
+  m_MinValue: 0
   m_MaxValue: 40
   m_WholeNumbers: 0
-  m_Value: 3.2
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
