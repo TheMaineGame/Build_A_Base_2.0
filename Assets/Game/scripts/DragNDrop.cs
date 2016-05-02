@@ -6,7 +6,8 @@ using System;
 /// <summary>
 /// Used to drag and drop the buildings.
 /// </summary>
-public class DragNDrop : MonoBehaviour, IDragHandler {
+public class DragNDrop : MonoBehaviour, IDragHandler, IEndDragHandler
+{
     [SerializeField]
     LayerMask floor;
     [SerializeField]
@@ -23,6 +24,7 @@ public class DragNDrop : MonoBehaviour, IDragHandler {
         var worldPos = eventData.pointerCurrentRaycast.worldPosition;
         var screenPos = eventData.pointerCurrentRaycast.screenPosition;
         var cam = eventData.pressEventCamera;
+        var origBounds = box.bounds;
 
         // Change the position of the origin to world space for ray calculation
         var pointerPos = cam.ScreenToWorldPoint (screenPos);
@@ -35,8 +37,27 @@ public class DragNDrop : MonoBehaviour, IDragHandler {
         if (Physics.Raycast (toFloor, out hit, 10000, floor)) {
             var point = hit.point;
             var snapped = new Vector3 (Mathf.Round (point.x), Mathf.Round (point.y), Mathf.Round (point.z));
-            if (!Physics.CheckBox(point, box.bounds.extents, transform.rotation, buildings))
+            var offset = snapped - gameObject.transform.position;
+            var extents = box.bounds.extents;
+            var center = gameObject.transform.rotation * box.center;
+            Debug.Log("Checking point " + (snapped + center) + ", extents " + extents);
+            box.enabled = false;
+            Debug.Log ("Box.enabled is " + box.enabled);
+            var colliders = Physics.OverlapBox (snapped + center, extents, Quaternion.identity, buildings);
+            foreach (var c in colliders)
+                Debug.Log ("Overlapping: " + c);
+            if (!Physics.CheckBox(snapped + center, extents, Quaternion.identity, buildings))
+            {
                 gameObject.transform.position = snapped;
+                AstarPath.active.UpdateGraphs(box.bounds);
+                AstarPath.active.UpdateGraphs(origBounds);
+            }
+            box.enabled = true;
         }
+    }
+
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        AstarPath.active.UpdateGraphs(box.bounds);
     }
 }
