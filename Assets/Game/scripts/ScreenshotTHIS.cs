@@ -33,6 +33,7 @@ public class ScreenshotTHIS : MonoBehaviour {
 
     }
 
+
     public void OnClick ()
     {
         Canvas.SetActive(false);

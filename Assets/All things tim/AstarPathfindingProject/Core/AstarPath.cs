@@ -809,12 +809,12 @@ public class AstarPath : MonoBehaviour {
 	/** Logs a string while taking into account #logPathResults */
 	private static void AstarLog (string s) {
 		if (System.Object.ReferenceEquals(active, null)) {
-			Debug.Log("No AstarPath object was found : "+s);
+			//Debug.Log("No AstarPath object was found : "+s);
 			return;
 		}
 
 		if (active.logPathResults != PathLog.None && active.logPathResults != PathLog.OnlyErrors) {
-			Debug.Log(s);
+			//Debug.Log(s);
 		}
 	}
 
