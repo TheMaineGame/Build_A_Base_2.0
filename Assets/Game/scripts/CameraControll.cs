@@ -264,7 +264,7 @@ public class CameraControll : MonoBehaviour {
     {
         curZoom = currentZoom;
     }
-    
+
     public void zoomin()
     {
         zooming = true;
