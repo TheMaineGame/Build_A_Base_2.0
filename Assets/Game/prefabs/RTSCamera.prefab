@@ -80,7 +80,6 @@ Transform:
   - {fileID: 429392}
   m_Father: {fileID: 484386}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &429392
 Transform:
   m_ObjectHideFlags: 1
@@ -93,7 +92,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 417942}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &480084
 Transform:
   m_ObjectHideFlags: 1
@@ -106,7 +104,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 484386}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &484386
 Transform:
   m_ObjectHideFlags: 1
@@ -121,7 +118,6 @@ Transform:
   - {fileID: 417942}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &2083250
 Camera:
   m_ObjectHideFlags: 1
@@ -184,8 +180,8 @@ MonoBehaviour:
   cameraState: 1
   rotateButton: 1
   panButton: 0
+  anim: {fileID: 0}
   zoom: {fileID: 0}
-  dragSpeed: 5
   maxZoom: 40
   minZoom: 3
   zoomSpeed: 15
@@ -207,7 +203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_EventMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 768
 --- !u!114 &11480050
 MonoBehaviour:
   m_ObjectHideFlags: 1
