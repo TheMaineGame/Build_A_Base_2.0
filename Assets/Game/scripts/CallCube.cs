@@ -12,6 +12,12 @@ public class CallCube : MonoBehaviour {
     const byte limit = 128;
     static byte count = 0;
 
+    public void Start()
+    {
+        count = 0;
+
+    }
+
     public void CubeCall () {
         if (count < limit) {
             var pos = new Vector3 (
