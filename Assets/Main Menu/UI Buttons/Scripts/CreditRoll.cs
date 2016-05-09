@@ -24,10 +24,6 @@ public class CreditRoll : MonoBehaviour {
     }
 
 	void Update () {
-        if(this.transform.localPosition.y >= 1300)
-        {
-            ResetPos();
-        }
         pos += (Time.deltaTime * speed);
 
         this.transform.localPosition = new Vector3(0,pos,0);
