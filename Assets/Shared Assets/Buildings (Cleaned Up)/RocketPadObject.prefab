@@ -11,7 +11,6 @@ GameObject:
   - 65: {fileID: 6513732}
   - 114: {fileID: 11446126}
   - 114: {fileID: 11468348}
-  - 114: {fileID: 11449750}
   m_Layer: 9
   m_Name: RocketPadObject
   m_TagString: Untagged
@@ -366,7 +365,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: ab616bb2828db194f9dbd08be255d26b, type: 2}
+  - {fileID: 2100000, guid: 5fafe80a9f26fd54381b9dc346c5fd6b, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -418,7 +417,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 1372d79ae3ef1e949bc2d1c40b8c7099, type: 2}
+  - {fileID: 2100000, guid: 5fafe80a9f26fd54381b9dc346c5fd6b, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -470,7 +469,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 76c3342d5190f754bac50fb5371dd203, type: 2}
+  - {fileID: 2100000, guid: 084bdf0fbd370824ca5e3e38c20f66af, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -496,7 +495,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: c712ccd4f20acac489d2bf9c175bab54, type: 2}
+  - {fileID: 2100000, guid: ce660781800fe1e43a8ad05751f7f5d5, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -671,17 +670,6 @@ MonoBehaviour:
   buildings:
     serializedVersion: 2
     m_Bits: 512
---- !u!114 &11449750
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 111008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60d96aa07927b014097cb8abbb9da083, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11468348
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -695,10 +683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingLayer:
     serializedVersion: 2
-    m_Bits: 512
-  ghostLayer:
-    serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 0
   riseUnitsPerSec: 2
   rotationDuration: 1
   lowerUnitsPerSec: 2
@@ -722,22 +707,6 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: buildings.m_Bits
       value: 512
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: riseUnitsPerSec
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: rotationDuration
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: lowerUnitsPerSec
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: levitateHeight
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

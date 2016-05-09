@@ -6,8 +6,7 @@ using System;
 /// <summary>
 /// Used to drag and drop the buildings.
 /// </summary>
-public class DragNDrop : MonoBehaviour, IDragHandler, IEndDragHandler
-{
+public class DragNDrop : MonoBehaviour, IDragHandler {
     [SerializeField]
     LayerMask floor;
     [SerializeField]
@@ -24,7 +23,6 @@ public class DragNDrop : MonoBehaviour, IDragHandler, IEndDragHandler
         var worldPos = eventData.pointerCurrentRaycast.worldPosition;
         var screenPos = eventData.pointerCurrentRaycast.screenPosition;
         var cam = eventData.pressEventCamera;
-        var origBounds = box.bounds;
 
         // Change the position of the origin to world space for ray calculation
         var pointerPos = cam.ScreenToWorldPoint (screenPos);
@@ -47,17 +45,8 @@ public class DragNDrop : MonoBehaviour, IDragHandler, IEndDragHandler
             foreach (var c in colliders)
                 Debug.Log ("Overlapping: " + c);
             if (!Physics.CheckBox(snapped + center, extents, Quaternion.identity, buildings))
-            {
                 gameObject.transform.position = snapped;
-                AstarPath.active.UpdateGraphs(box.bounds);
-                AstarPath.active.UpdateGraphs(origBounds);
-            }
             box.enabled = true;
         }
-    }
-
-    public void OnEndDrag(PointerEventData eventData)
-    {
-        AstarPath.active.UpdateGraphs(box.bounds);
     }
 }

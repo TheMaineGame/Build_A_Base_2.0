@@ -12,12 +12,6 @@ public class CallCube : MonoBehaviour {
     const byte limit = 128;
     static byte count = 0;
 
-    public void Start()
-    {
-        count = 0;
-
-    }
-
     public void CubeCall () {
         if (count < limit) {
             var pos = new Vector3 (
@@ -52,7 +46,6 @@ public class CallCube : MonoBehaviour {
             }
             var building = Instantiate (m_livingQuarters);
             building.transform.position = pos + offset;
-            AstarPath.active.UpdateGraphs(building.GetComponent<BoxCollider>().bounds);
             count++;
         }
     }
