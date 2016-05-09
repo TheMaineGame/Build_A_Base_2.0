@@ -24,7 +24,7 @@ public class CreditRoll : MonoBehaviour {
     }
 
 	void Update () {
-        if(this.transform.localPosition.y >= 1300)
+        if(this.transform.localPosition.y >= 2000)
         {
             ResetPos();
         }

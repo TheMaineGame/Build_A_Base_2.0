@@ -1,8 +1,18 @@
 ﻿using UnityEngine;
+using UnityEngine.Audio;
 using System.Collections;
 
 public class MusicManager : MonoBehaviour
 {
+
+    [SerializeField] AudioSource MenuMusic;
+    [SerializeField] AudioSource GameMusic;
+
+    [SerializeField] AudioMixerSnapshot MenuSnapshot;
+    [SerializeField] AudioMixerSnapshot GameSnapshot;
+
+
+
     private static MusicManager _instance;
 
     public static MusicManager instance
@@ -36,7 +46,12 @@ public class MusicManager : MonoBehaviour
             if (this != _instance)
                 Destroy(this.gameObject);
         }
+
+        MenuMusic.Play();
+
     }
+
+    
 
     public void Play()
     {
