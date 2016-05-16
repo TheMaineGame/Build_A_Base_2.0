@@ -10,7 +10,7 @@ public class CallCube : MonoBehaviour {
     LayerMask buildings;
 
     const byte limit = 128;
-    static byte count = 0;
+    public static byte count = 0;
 
     public void Start()
     {
@@ -52,8 +52,13 @@ public class CallCube : MonoBehaviour {
             }
             var building = Instantiate (m_livingQuarters);
             building.transform.position = pos + offset;
-            AstarPath.active.UpdateGraphs(building.GetComponent<BoxCollider>().bounds);
+            AstarPath.active.UpdateGraphs (building.GetComponent<BoxCollider> ().bounds);
             count++;
         }
+    }
+
+    // This function is called after a new level was loaded
+    public void OnLevelWasLoaded (int level) {
+        count = 0;
     }
 }
