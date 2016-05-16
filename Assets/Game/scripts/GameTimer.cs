@@ -22,6 +22,8 @@ public class GameTimer : MonoBehaviour
     GameObject SnapShot;
     [SerializeField]
     GameObject SliderCanvas;
+    [SerializeField]
+    AudioSource LowTimeAlert;
 
 
 
@@ -67,6 +69,10 @@ public class GameTimer : MonoBehaviour
             {
                 overlayColor.color = Color.red;
                 countDownTimer.color = Color.red;
+            }
+            if (timer <= 10)
+            {
+                LowTimeAlert.Play();
             }
             timer--;
             countDownTimer.text = timer.ToString();

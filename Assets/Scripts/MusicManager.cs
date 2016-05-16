@@ -48,13 +48,16 @@ public class MusicManager : MonoBehaviour
         }
 
         MenuMusic.Play();
+        MenuFix();
 
     }
 
-    
+    public void TransitionGame (float time) {
+        GameSnapshot.TransitionTo(time);
+    }
 
-    public void Play()
+    public void MenuFix()
     {
-        //Play some audio!
+        MenuSnapshot.TransitionTo(0f);
     }
 }

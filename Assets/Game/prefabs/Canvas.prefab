@@ -8922,6 +8922,7 @@ MonoBehaviour:
   TimerCanvas: {fileID: 0}
   SnapShot: {fileID: 123934}
   SliderCanvas: {fileID: 100596}
+  LowTimeAlert: {fileID: 0}
 --- !u!114 &11482654
 MonoBehaviour:
   m_ObjectHideFlags: 1
