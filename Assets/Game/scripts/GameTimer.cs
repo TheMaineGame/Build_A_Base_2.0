@@ -25,6 +25,7 @@ public class GameTimer : MonoBehaviour
     [SerializeField]
     AudioSource LowTimeAlert;
 
+    [SerializeField] AudioClip ReallyLowClip;
 
 
     // Use this for initialization
@@ -40,6 +41,7 @@ public class GameTimer : MonoBehaviour
     {
 
         fillamount.fillAmount += Time.deltaTime / 60;
+
     }
 
     public void GameOver()
@@ -74,6 +76,7 @@ public class GameTimer : MonoBehaviour
             {
                 LowTimeAlert.Play();
             }
+            
             timer--;
             countDownTimer.text = timer.ToString();
             yield return new WaitForSeconds(1);
