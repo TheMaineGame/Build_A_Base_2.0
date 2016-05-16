@@ -1,24 +1,29 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.Audio;
 
 public class SoundController : MonoBehaviour {
     [SerializeField] Sprite MusicOn;
     [SerializeField] Sprite MusicOff;
-    
 
-	public void Sound () 
+    [SerializeField] AudioMixer Mixer;
+
+    float measure;
+
+    public void Sound () 
 	{
-		if (AudioListener.volume == 0)
+        
+        Mixer.GetFloat("Master Volume Slider", out measure);
+
+        if (measure < 0f )
         {
-            AudioListener.volume = 1;
-            AudioListener.pause = false;
+            Mixer.SetFloat("Master Volume Slider", 0f);
             gameObject.GetComponent<Image>().sprite = MusicOn;
         }
         else
         {
-            AudioListener.volume = 0;
-            AudioListener.pause = true;
+            Mixer.SetFloat("Master Volume Slider", -80f);
             gameObject.GetComponent<Image>().sprite = MusicOff;
         }
 	}

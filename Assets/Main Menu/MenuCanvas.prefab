@@ -1075,7 +1075,8 @@ AudioSource:
   m_GameObject: {fileID: 131394}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24327870, guid: 93ca198b5c952ee41acb8753ddab8889,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: c6e07e2aa5754cc4f985f700e03a2d85, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.8
@@ -1223,7 +1224,8 @@ AudioSource:
   m_GameObject: {fileID: 167684}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24327870, guid: 93ca198b5c952ee41acb8753ddab8889,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 5e699a3bf44c20d43a0a0c03547d2fd9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.8
@@ -1297,7 +1299,8 @@ AudioSource:
   m_GameObject: {fileID: 101198}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24327870, guid: 93ca198b5c952ee41acb8753ddab8889,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 8d5618f25f4bf994599745d999ea8157, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.8
@@ -2778,7 +2781,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: cd9d27405135fdc44b67665e18d8209c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 28ebf4e4c896e7f4eb7158c0a4f17ea5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

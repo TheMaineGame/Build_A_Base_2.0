@@ -15,7 +15,9 @@ AudioMixerController:
   m_StartSnapshot: {fileID: 24594676}
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: 6ec6fa31e5f4b9843a732086c2d44c76
+    name: Master Volume Slider
   m_AudioMixerGroupViews:
   - guids:
     - bccd5f98cac46a9469e11a28e7b0f989
@@ -26,7 +28,7 @@ AudioMixerController:
     - 1c9c177fbe3f9cf428ca4dd2ff8cd260
     name: View
   m_CurrentViewIndex: 0
-  m_TargetSnapshot: {fileID: 24594676}
+  m_TargetSnapshot: {fileID: 24500003}
 --- !u!243 &24300001
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
